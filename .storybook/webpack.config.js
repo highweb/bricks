@@ -18,7 +18,7 @@ module.exports = (baseConfig, mode) => {
   })
 
   baseConfig.module.rules.push({
-    test: /\.png$/,
+    test: /\.(jpe?g|png|gif|svg)/,
     loader: 'file-loader'
   })
 

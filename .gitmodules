@@ -1,0 +1,3 @@
+[submodule "src/components/atomic-carousel"]
+	path = src/components/atomic-carousel
+	url = git@github.com:highweb/atomic-carousel.git

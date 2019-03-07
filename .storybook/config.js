@@ -27,3 +27,10 @@ function loadStories() {
 }
 
 configure(loadStories, module)
+
+// @TODO: Get rid of these dirty hacks.
+import jquery from 'jquery';
+global.$ = jquery;
+global.jQuery =  jquery;
+require('owl.carousel/dist/owl.carousel');
+require('atomic-carousel/atomic-carousel');

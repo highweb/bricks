@@ -4,3 +4,6 @@
 [submodule "src/components/atomic-gallery"]
 	path = src/components/atomic-gallery
 	url = git@github.com:highweb/atomic-gallery.git
+[submodule "src/components/examples"]
+	path = src/components/examples
+	url = git@github.com:highweb/bricks-examples.git

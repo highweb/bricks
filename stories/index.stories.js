@@ -9,6 +9,7 @@ import icon from '../src/components/icon/icon.twig'
 import button from '../src/components/button/button.twig'
 import carousel from '../src/components/atomic-carousel/atomic-carousel.twig'
 import gallery from '../src/components/atomic-gallery/atomic-gallery.twig'
+import galleryCarousel from '../src/components/examples/gallery-carousel/gallery-carousel.twig'
 
 const stories = storiesOf('Demo', module)
 
@@ -27,7 +28,8 @@ stories
       '<img src="https://placehold.it/1000x500/000000"/>'
     ]
   }}))
-  .add('gallery', () => gallery({ gallery: {
+
+const galleryData = {
     items: [
       {
         title: 'Banana',
@@ -58,4 +60,7 @@ stories
         poster: 'https://i.vimeocdn.com/video/448835699.jpg'
       }
     ]
-  }}))
+}
+stories
+  .add('gallery', () => gallery({ gallery: galleryData }))
+  .add('gallery-carousel', () => galleryCarousel({ gallery: galleryData }))
